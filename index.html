@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #input-alert {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <!-- <form id="testform" class="testform"> -->
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="mission-label">请输入n的值（取值范围1~9）：</label>
+                            <input type="text" class="form-control" id="value_of_n" name="value_of_n" onkeypress="enterdrawform()" onkeydown="enterdrawform()" placeholder="取值范围：1~9">
+                        </div>
+                        <button class="btn btn-default" onclick="drawform()">确认！</button>
+                    </div>
+                <!-- </form> -->
+                <div>
+                    <table class="table table-bordered text-center" id="newtable">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/check_submit.js"></script>
+</body>
+</html>
